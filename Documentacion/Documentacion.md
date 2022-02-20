@@ -47,5 +47,9 @@ Si el metodo no acepta ningun parametro, entonces se llama sin (). Caso contrari
 saludar
 saludar()
 ```
-
+## Operadores de comparacion
+```ruby
+a == a #igual
+2 != 2 #diferente a
+```
 
