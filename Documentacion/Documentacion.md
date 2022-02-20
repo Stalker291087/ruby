@@ -52,4 +52,25 @@ saludar()
 a == a #igual
 2 != 2 #diferente a
 ```
+## Condiciones
+Permiten ejecutar un bloque de codigo dependiendo del resultado de la condicion, si esta aplica o no.
+
+## Operadores Logicos
+```ruby
+if calificacion == 0 || calificacion == 1
+        print "No estudiaste nada"
+    elsif calificacion > 1 && calificacion < 7
+        print "Reprobaste"
+    elsif calificacion == 7 || calificacion == 8
+        print "Apenas pasaste"
+    elsif calificacion == 9
+        print "Te fue muy bien"
+    elsif calificacion == 10
+        print "Te fue excelente, felicidades"
+    else
+        print "Esa calificacion no es valida, intente de nuevo"
+    end
+```
+
+
 
