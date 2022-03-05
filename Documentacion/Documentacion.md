@@ -98,7 +98,7 @@ nuevosJuegos = videojuegos.drop(2)
 parteJuegos = videojuegos.slice(1, 3)
 ```
 
-### Hashes
+## Hashes
 Permite guardar llaves y valores, las llaves no se puede repetir, debe ser un valor unico
 ```ruby
 contactos = {"nombre" => "Jean Carlo", "telefono" => 702114785}
@@ -124,7 +124,7 @@ newcontacts.has_key?(:estado)
 # Metodo para agregar elementos a un hash
 newcontactos.store(:pensionado, "No")
 ```
-## Trabajar con valores en los hashes
+### Trabajar con valores en los hashes
 ```ruby
 # Devolver todos los valores en un hash
 newcontactos.values
