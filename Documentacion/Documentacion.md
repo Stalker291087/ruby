@@ -72,6 +72,62 @@ if calificacion == 0 || calificacion == 1
     end
 end
 ```
+### Arreglos
+Crear un arreglo
+```ruby
+videojuegos = ["Quake", "COD"]
+```
+Agregar elementos a un arreglo
+```ruby
+videojuegos << "AOE"
+videojuegos.push("Hellgate London")
+# Agregar un elemento al inicio
+videojuegos.unshift("Stalker")
+# Agregar 2 elementos
+videojuegos += ["Fallout", "Fallout3"]
+```
+Remover elementos
+```ruby
+# Asignar primer valor del arreglo a una variable y removerlo del arreglo
+primerJuego = videojuegos.shift
+# # Asignar ultimo valor del arreglo a una variable y removerlo del arreglo
+ultimoJuego = videojuegos.pop
+# Pasar elementos a un arreglo sin destruir el arreglo original
+nuevosJuegos = videojuegos.drop(2)
+# Seleccionar los elementos sin destruir el arreglo original
+parteJuegos = videojuegos.slice(1, 3)
+```
 
-
-
+### Hashes
+Permite guardar llaves y valores, las llaves no se puede repetir, debe ser un valor unico
+```ruby
+contactos = {"nombre" => "Jean Carlo", "telefono" => 702114785}
+# Accessar a los datos
+contactos["telefono"]
+# Reemplazar valor de una llave
+contactos["telefono"] = 80808080
+# Usando simbolos
+contactos = {:nombre => "Jean Carlo", :telefono => 702114785}
+# Forma abreviada usando simbolos
+contactos = {nombre: "Jean Carlo", telefono: 702114785}
+# Agregar elementos
+contactos[:estado] = "soltero"
+# Agregar varios elementos | POr defecto esto no modificar el hash original
+contactos.merge({nacionalidad: "CR", hijos: "No"})
+newcontactos = contactos.merge({nacionalidad: "CR", hijos: "No"})
+# Obtener el numero de elementos de un hash
+contactos.length
+# Obtener todas las llaves
+newcontactos.keys
+# Verificar si un hash tiene una llave en especifico
+newcontacts.has_key?(:estado)
+# Metodo para agregar elementos a un hash
+newcontactos.store(:pensionado, "No")
+```
+## Trabajar con valores en los hashes
+```ruby
+# Devolver todos los valores en un hash
+newcontactos.values
+# Verificar si un valor existe en nuestro hash
+newcontactos.has_value?("CR")
+```
