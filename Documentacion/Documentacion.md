@@ -131,3 +131,90 @@ newcontactos.values
 # Verificar si un valor existe en nuestro hash
 newcontactos.has_value?("CR")
 ```
+## Ciclos e Iteraciones
+
+### Ciclo Loop
+```ruby
+loop do
+    print "Quieres continuar jugando? s/n"
+    respuesta = gets.chomp
+    if respuesta != "s"
+        break
+    end
+    puts "Sigamos jugando"
+end
+```
+
+### Ciclo Until
+```ruby
+respuesta = ""
+
+until respuesta == "n"
+    puts "Estoy jugando"
+    print "Moriste, quieres seguir jugando? s/n "
+    respuesta = gets.chomp    
+end
+```
+### Ciclo While
+```ruby
+vidas = 3
+
+while vidas  > 0
+    puts "Estoy jugando porque aun tengo vidas"
+    vidas -= 1
+end
+```
+## Ciclo Each
+Convencion, si solo es una linea de codigo se deberia usar do, si son mas lineas se utiliza each
+```ruby
+num_array = [1, 2, 3, 4, 5]
+
+# Recorrer elementos del array
+num_array.map { |num| 
+    puts num
+}
+
+contacts_hash = {Jean: 12345, Pedro: 6789, Ana: 55555}
+
+contacts_hash.map { |key, value| 
+    puts "La llave es #{key} y el valor es #{value}"
+}
+
+num_array = [1, 2, 3, 4, 5]
+
+# Recorrer elementos del array
+num_array.map { |num| 
+    puts num
+}
+
+contacts_hash = {Jean: 12345, Pedro: 6789, Ana: 55555}
+
+contacts_hash.map { |key, value| 
+    puts "La llave es #{key} y el valor es #{value}"
+}
+
+# Tomando solo las llaves o los valores del hash
+contacts_hash.each_key { |llave| 
+    puts llave
+}
+
+contacts_hash.each_value { |valor| 
+    puts valor
+}
+
+nombre = "Jean Carlo Espinoza"
+nombre.each_char do |chr|
+    puts chr
+end
+```
+## Iterador times
+Exclusivo de los numeros enteros, se lo asigna a un bloque de codigo y se ejecutara ese numero de veces
+```ruby
+10.times do |time|
+    puts "Este es el iterador #{time}"
+end
+
+10.times do
+    puts "Este es el iterador times"
+end
+```
