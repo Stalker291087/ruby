@@ -56,6 +56,7 @@ puts perro.color
 puts perro.edad
 ```
 ### Readers and Writters
+```ruby
 class Perro
     attr_reader :raza, :color, :edad
     attr_writer :color, :raza, :edad
