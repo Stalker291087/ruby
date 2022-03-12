@@ -1,0 +1,14 @@
+Crear aplicacion de agenda de contactos en ruby
+
+Ver
+Nombres
+Apellidos
+Correo
+Telefono
+Trabajo
+
+Agregar contacto con su nombre y numero
+borrar un contacto en base al nombre
+mostrar un numero con base al nombre
+borrar todos los contactos
+salir de la aplicacion
