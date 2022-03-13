@@ -218,3 +218,18 @@ end
     puts "Este es el iterador times"
 end
 ```
+## Bloques
+No son objetos en si, son solo piezas de codigo que se puedan llamar en una funcion o variable.
+Si nuestro bloque tiene una sola linea de codigo se utilizan llaves
+```ruby
+7.times {
+  puts "Esto es parte de un bloque de codigo"
+}
+end
+```
+Si son varias lineas utilizamos do end
+```ruby
+7.times do
+  puts "Esto es parte de un bloque de codigo"
+  end
+```
