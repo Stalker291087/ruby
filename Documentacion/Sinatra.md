@@ -33,6 +33,7 @@ Utilizado para poner texto estatico en paginas creadas con el framework Sinatra
 <% end %>
 ```
 ### Salida
+Utilizada para poder imprimir variables contenidas en otros archivos .rb
 ```ruby
 <h1>Talleres del ciclo Escolar 2021</h1>
 
