@@ -42,3 +42,19 @@ Utilizada para poder imprimir variables contenidas en otros archivos .rb
   <p><%= @valor %></p>
 <% end %>
 ```
+
+### Obtener contenido de un archivo
+```ruby
+def workshop_content(name)
+  File.read("workshops/#{name}.txt")
+rescue Errno::ENOENT
+  return nil
+end
+```
+### Metodos POST
+```ruby
+post '/create.erb' do
+  save_workshop(params["name"], params["description"])
+  erb :new
+end
+```
